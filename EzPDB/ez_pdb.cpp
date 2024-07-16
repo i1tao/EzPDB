@@ -104,7 +104,7 @@ bool ez_pdb::init()
         pdb_store_path.c_str(),
         nullptr,
         0x100000000ULL,
-        pdb_size_, 
+        static_cast<DWORD>(pdb_size_), 
         nullptr, 0);
     if (!symbol_table)
     {

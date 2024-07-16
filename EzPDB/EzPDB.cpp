@@ -11,6 +11,5 @@ int main()
 		auto rva_ntclose = pdb.get_rva("PspCidTable");
 		printf("nt!PspCidTable = %llx\n", rva_ntclose);
 	}
-    int n = 9;
 }
 
